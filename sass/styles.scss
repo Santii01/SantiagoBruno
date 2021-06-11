@@ -1,0 +1,68 @@
+* { margin: 0;padding: 0;box-sizing: border-box;}
+
+    body {background: #78bbcb;font-family: Simpsonfont;width: 100vw;height: 100vh;max-width: 100%;max-height: 100%;}
+    
+        header {h1 {font-size: 70px;text-align: center;padding: 10px;}}
+
+            section {display: flex;justify-content: center;flex-direction: row;align-items: center;
+                
+                .columnas {margin: 17px;
+                    
+                &:nth-of-type(1){margin-right: 64px;
+                    
+                    div{width: 80px;height: 80px;
+                        
+                        &:nth-of-type(1){position: relative;left: 17px;margin-bottom:90px;animation: rotate-animation 10s infinite alternate;}
+
+
+                        &:nth-of-type(3){margin: 17px 0 32px 0;}
+
+                        &:nth-of-type(4){position: relative;left: 33px;width: 70px;height: 80px;}
+
+                        &:nth-of-type(5){position: relative;margin-top: 30px;animation: rotate-animation 10s infinite alternate;}
+                            }
+                        }
+
+                &:nth-of-type(2){
+                    div {width: 80px;height: 85px;
+
+                        &:nth-of-type(2){margin: 17px 0 48px 0;margin-top: 4rem;}
+
+                        &:nth-of-type(3){margin-top: 5rem;}
+                            }
+                        }
+                &:nth-of-type(3){margin-right: 4rem;
+                            
+                    div{ 
+                    }
+                        }
+
+                    &:nth-of-type(4){
+
+                        div {width: 80px;height: 80px;
+                            
+
+                            &:nth-of-type(2){margin: 17px 0 64px 0;}
+
+                            &:nth-of-type(3){position: relative;right: 33px;}
+                        }
+                    }
+
+                    &:nth-of-type(5) {
+                        
+                        div {width: 70px;height: 90px;margin-bottom: 4rem;
+                        
+                            &:nth-of-type(2){margin-top: 4rem;}
+                        }
+                    }
+                }
+            }
+
+        @keyframes rotate-animation {
+
+           10% {left: 10rem;}
+           20% {right: 15rem;}
+           30% {left: 20px;}
+           40% {left: 25rem;}
+        }
+     
