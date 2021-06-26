@@ -1,0 +1,90 @@
+* {margin: 0%;padding: 0%;}
+
+main {font-family: Verdana, Geneva, Tahoma, sans-serif;box-sizing: border-box;background: rgba(255,230,0,255);height: 100%;width: 100%;grid-gap:10px;display: grid;
+    grid-template-areas: 
+    "header header header"
+    "article content ads"
+    "article content ads"
+    "footer footer footer";
+
+   .area-1 {grid-area:header;
+
+        div.area-1-item-1 {width: auto;height: auto;
+            
+            img {float:left;}
+    }
+
+    form.area-1-item-2 {position: relative;text-align: center;padding: 20px;
+
+        input {width:400px;height: 30px;font-size: 15px;padding: 3px;border-radius: 5px;text-align: center;}
+    }
+
+    div.area-1-item-3 {width: auto;height: auto;
+    
+        img {float: right;}
+    }
+
+    div.area-1-item-4 {width: auto;height: auto;
+    
+        nav ul {display: flex;justify-content: space-evenly;font-size: 25px;list-style: none;
+        
+            li a {color:gray}
+
+                a:hover {color: black;}
+        }
+    }
+
+}
+
+   .area-2 {grid-area:article;font-size: 27px;margin: 10px;
+        div.area-2-item-1 {width: 200px;height: 500px;padding: 10px;padding-bottom: 70px;text-align: start;
+            img {width: 100px;height: auto;padding: 20px;}
+
+        h3 {color: #cfc547;text-shadow: -1px 1px 0 #41ba45,
+            1px 1px 0 #c63d2b,
+            1px -1px 0 #42afac,
+            -1px -1px 0 #c6c23f;}
+            span {color:#cfc547;text-shadow: -1px 1px 0 #41ba45,
+                1px 1px 0 #c63d2b,
+                1px -1px 0 #42afac,
+                -1px -1px 0 #c6c23f;}
+    }
+
+    div.area-2-item-2 {width: 230px;height: auto;font-size: 27px;text-align: start;
+
+        img {width: 200px;height: 250px;padding: 20px;}
+        
+        h3 {color: #cfc547;text-shadow: -1px 1px 0 #41ba45,
+            1px 1px 0 #c63d2b,
+            1px -1px 0 #42afac,
+            -1px -1px 0 #c6c23f;}
+
+            span {color:#cfc547;text-shadow: -1px 1px 0 #41ba45,
+                1px 1px 0 #c63d2b,
+                1px -1px 0 #42afac,
+                -1px -1px 0 #c6c23f;}
+    }
+}
+
+   .area-3 {grid-area: content;
+
+        div.area-3-item-1 {width: auto;height: auto;
+            
+            img {width: auto;height: 600px;}
+        }
+
+        div.area-3-item-2 {width: auto;height: auto;
+            
+            img {width: auto;}
+        }
+}
+
+   .area-4 {grid-area: ads;display: flex;flex-direction: column;justify-content: space-evenly;}
+
+
+   .area-5 {grid-area: footer;font-size: 20px;padding: 10px;border-top: 2px solid black;display: flex;justify-content: space-between;
+
+    nav {display:flex ;flex-direction: column;
+    }
+    }
+}
