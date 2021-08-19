@@ -3,10 +3,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Edad TP JS</title>
 </head>
 <body>
-    <h1>asd</h1>
+    <main>
+        <header>
+            <section>
+                <div class="conteinerinputs">
+                    <form onsubmit={formF(event)}>
+                        <h2>
+                            ¡Hola! <br> Para Registrarte <br> completá tus datos.
+                        </h2>
+                        <label class="label" for="Nombre">Nombre :</label>
+                        <input class="inputs" id="nombre" type="text" minlength="1" maxlength="30" placeholder="Roberto">
+                        <label class="label" for="Apellido">Apellido :</label>
+                        <input class="inputs" id="lastname" type="text" placeholder="Díaz" minlength="1" maxlength="25">
+                        <label class="label" for="age">Edad :</label>
+                        <input class="inputs" id="age" type="number" placeholder="33" minlength="1" maxlength="4">
+                        <label class="label" for="Gmail">Ingrese Su Gmail</label>
+                        <input class="inputs" id="email" type="text" placeholder="example123@gmail.com" minlength="1" maxlength="100">
+                        <input class="sumbit" id="sumbit" type="submit" value="Enviar Formulario">
+                        <label class="comments" for="Comentarios">¿Te gustaria ayudarnos? <br> Deja un comentario!</label>
+                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+                        <label class="conditions" for="conditions">He leído y acepto los términos y condiciones de uso.</label>
+                        <input type="checkbox" value="Aceptar" required>
+                    </form>
+                    <div id="formavalues"></div>
+                </div>
+            </section>
+        </header>
+    </main>
 
     <script src="main.js"></script>
 </body>

@@ -1,0 +1,120 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(245, 241, 241);
+    box-sizing: border-box;
+    font-family: Tourney SemiCondensed Black;
+
+    main {
+        width: inherit;
+
+        header {
+            width: 100%;
+            height: auto;
+
+        
+            .conteinerinputs {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                form {
+                    margin: 5rem;
+                    width: 200px;
+                    height: auto;
+                    padding: 2rem;
+                    border: 2px solid rgb(56, 39, 39);
+                    border-radius: 10px;
+                    background: rgb(160, 150, 150);
+                    text-align: center;
+
+                    h2 {
+                        font-size: 30px;
+                        text-shadow: 1px 5px 1px rgb(219, 193, 193);
+                        padding: 2rem;
+                        
+                    }
+
+                    ::placeholder {
+                        color: lightslategray;
+                        font-size: 15px;
+                        text-align: center;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    }
+
+                    .label {
+                        font-size: 19px;
+                    }
+
+                    .inputs {
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 4px;
+                        margin-bottom: 1rem;
+                        font-size: 18px;
+                    }
+                    .inputs.error {
+                        border: 2px solid red;
+                        border-radius: 2rem;
+                        transition: 0.2s;
+                    }
+                    .sumbit{
+                        width: 150px;
+                        height: 30px;
+                        margin: 1rem;
+                        color:black;
+                        border: 1px solid black;
+                        border-radius: 1rem;
+                        background: rgb(241, 230, 230);
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                    }
+
+                    .sumbit:active{
+                        width: 200px;
+                        font-size: 15px;
+                        background: gray;
+                        transition: 0.2s;
+                    }
+                    .sumbit:hover {
+                        width: 180px;
+                        background: rgb(165, 165, 165);
+                        transition: 0.5s;
+                        text-align: center;
+                    }
+
+                    .comments {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                    
+                    .conditions {
+                        font-size: 13px;
+                        text-align: center;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        border-radius: 4px;
+                    }
+
+                }
+               
+            }
+        }
+    }
+}
+
+
+
+.inputs:focus {
+    outline: thick double;
+}
+

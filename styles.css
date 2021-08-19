@@ -1,0 +1,102 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #f5f1f1;
+  box-sizing: border-box;
+  font-family: Tourney SemiCondensed Black;
+}
+body main {
+  width: inherit;
+}
+body main header {
+  width: 100%;
+  height: auto;
+}
+body main header .conteinerinputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main header .conteinerinputs form {
+  margin: 5rem;
+  width: 200px;
+  height: auto;
+  padding: 2rem;
+  border: 2px solid #382727;
+  border-radius: 10px;
+  background: #a09696;
+  text-align: center;
+}
+body main header .conteinerinputs form h2 {
+  font-size: 30px;
+  text-shadow: 1px 5px 1px #dbc1c1;
+  padding: 2rem;
+}
+body main header .conteinerinputs form ::placeholder {
+  color: lightslategray;
+  font-size: 15px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body main header .conteinerinputs form .label {
+  font-size: 19px;
+}
+body main header .conteinerinputs form .inputs {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+body main header .conteinerinputs form .inputs.error {
+  border: 2px solid red;
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+body main header .conteinerinputs form .sumbit {
+  width: 150px;
+  height: 30px;
+  margin: 1rem;
+  color: black;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background: #f1e6e6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body main header .conteinerinputs form .sumbit:active {
+  width: 200px;
+  font-size: 15px;
+  background: gray;
+  transition: 0.2s;
+}
+body main header .conteinerinputs form .sumbit:hover {
+  width: 180px;
+  background: #a5a5a5;
+  transition: 0.5s;
+  text-align: center;
+}
+body main header .conteinerinputs form .comments {
+  font-size: 15px;
+  text-align: center;
+}
+body main header .conteinerinputs form .conditions {
+  font-size: 13px;
+  text-align: center;
+}
+body main header .conteinerinputs form textarea {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.inputs:focus {
+  outline: thick double;
+}
+
+/*# sourceMappingURL=styles.css.map */
